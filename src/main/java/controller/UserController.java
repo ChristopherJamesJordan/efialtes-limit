@@ -1,7 +1,5 @@
 package controller;
 
-import java.util.Date;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -34,9 +32,7 @@ public class UserController {
 		System.out.println("Creating User " + user.getEmail());
 		
 		try {
-			// User user = new User(user.getEmail(), user.getPassword(), 0, user.getNickname(), true, false, new Date(), new Date());
-			userRepository.save(user);		
-			
+			userRepository.save(user);
 		} catch (Exception e) {
 			System.out.println("Error: " + e.toString());
 		}

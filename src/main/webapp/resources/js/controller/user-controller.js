@@ -2,6 +2,8 @@
  * @author Macesarr
  */
 
+'use strict'
+
 App.controller('userController', [
 		'$scope',
 		'userService',
